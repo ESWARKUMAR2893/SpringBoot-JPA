@@ -15,18 +15,19 @@ public class EmployeeService {
 	EmployeeRepo empRepo;
 	
 	public List<Employee> getAllEmployee() {
-		// TODO Auto-generated method stub
 		return empRepo.getAllEmployee();
 	}
 	
-	public List<Employee> getEmployeeById(String empid) {
-		// TODO Auto-generated method stub
+	public Employee getEmployeeById(String empid) {
 		return empRepo.getEmployeeById(empid);
 	}
 
 	public Employee saveEmp(Employee employee) {
-		
 		return empRepo.save(employee);
+	}
+
+	public void deleteEmp(Employee employee) {
+		empRepo.delete(employee);
 	}
 
 	
