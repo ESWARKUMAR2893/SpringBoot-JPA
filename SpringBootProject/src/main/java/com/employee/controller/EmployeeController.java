@@ -49,6 +49,16 @@ public class EmployeeController {
 		return "success";
 	}
 	
+	@PutMapping("/updateEmployee/{id}")
+	  Employee replaceEmployee(@RequestBody Employee newEmployee, @PathVariable String id) {
+
+	     Employee emp = empService.getEmployeeById(id);
+	      
+	        emp.setEmailId(newEmployee.getEmailId());
+	        emp.setEmployeeName(newEmployee.getEmployeeName());
+	        
+	        return empService.saveEmp(emp);
+	   }
 	
 	@DeleteMapping(value = "/deleteEmployee/{empid}")
     public Map<String, Boolean> deleteEmployee(@PathVariable("empid") String empid) {
