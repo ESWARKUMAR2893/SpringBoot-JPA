@@ -9,7 +9,11 @@ import javax.persistence.Table;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 @Entity
+@JsonIgnoreProperties(value = {"employeeId","employeeName"})
 @Table(name="empTable")
 public class Employee {
 
@@ -27,7 +31,7 @@ public class Employee {
 	@Column(name="empname")
 	private String employeeName;
 	
-	
+	@JsonIgnore
 	@Column(name="email")
 	private String emailId;
 
