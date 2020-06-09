@@ -17,18 +17,23 @@
    
    <form class="form-signin" method="post">
       <h1 class="h3 mb-3 font-weight-normal">Please Register here</h1>
+    
+    <font color="red">${error}</font>
+    <label for="inputemail" class="sr-only">Email Id</label>
+      <input type="text" id="inputemail" name="email" class="form-control" placeholder="Email id" required autofocus>
       
       <label for="inputFirstname" class="sr-only">Firstname</label>
-      <input type="text" id="inputFirstname" name="firstname" class="form-control" placeholder="Username" required autofocus>
+      <input type="text" id="inputFirstname" name="firstname" class="form-control" placeholder="Username" required>
     
-    <label for="inputLastname" class="sr-only">Firstname</label>
-      <input type="text" id="inputLastname" name="lastname" class="form-control" placeholder="Lastname" required>
+    <label for="inputLastname" class="sr-only">Lastname</label>
+      <input type="text" id="inputLastname" name="lastname_notthere" class="form-control" placeholder="Lastname" required>
     
     
       <label for="inputPassword" class="sr-only">Password</label>
       <input type="password" id="inputPassword" name="password" class="form-control" placeholder="Password" required>
      
       <button class="btn btn-lg btn-primary btn-block" type="submit">Register</button>
+      <p> Already Registered ? <a href="/login" class="text-primary">login here</a> </p>
       <p class="mt-5 mb-3 text-muted">&copy; 2019-2020</p>
     </form>
  

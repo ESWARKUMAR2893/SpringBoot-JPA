@@ -15,19 +15,9 @@
 
 <body class="text-center">
    
-   <form class="form-signin" method="post">
-      <h1 class="h3 mb-3 font-weight-normal">Please Sign in</h1>
-      <font color="red">${errorMessage}</font>
-      <label for="inputemail" class="sr-only">Email Id</label>
-      <input type="text" id="inputemail" name="email" class="form-control" placeholder="Email id" required autofocus>
-      <label for="inputPassword" class="sr-only">Password</label>
-      <input type="password" id="inputPassword" name="password" class="form-control" placeholder="Password" required>
-     
-      <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
-      <p> New User? <a href="/register" class="text-primary"> Register here</a> </p>
-      <p class="mt-5 mb-3 text-muted">&copy; 2019-2020</p>
-    </form>
- 
+   <h1>This is success page</h1> 
+    <br />
+    <h3>${success} </h3>
  
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
